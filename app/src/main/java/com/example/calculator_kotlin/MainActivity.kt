@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
 
     //function to evaluate expression
     private fun evaluateExpression(expression: String): Double {
-        return Expression(expression).calculate()
+        val parsedExpression = expression.replace("x", "*")
+        return Expression(parsedExpression).calculate()
     }
 }
