@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="347dp"
+        android:layout_height="65dp"
+        android:paddingEnd="5dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#43A047"
+        android:textSize="52sp"
+        app:layout_constraintBottom_toTopOf="@+id/operations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator App"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/operations"
+        android:layout_width="wrap_content"
+        android:layout_height="550dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:constraint_referenced_ids="btnclear,btnbracket,btnpercent,btndivide,btn7,btn8,btn9,btnmultiply,btn4,btn5,btn6,btnminus,btn1,btn2,btn3,btnplus,btnsign,btn0,btndecimal,btnequal"
+        app:flow_maxElementsWrap="4"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="C"
+        android:textColor="#F4511E"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnbracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="()"
+        android:textColor="#8E24AA"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnpercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="%"
+        android:textColor="#8E24AA"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btndivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="/"
+        android:textColor="#8E24AA"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="7"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="8"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="9"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnmultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="x"
+        android:textColor="#8E24AA"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="4"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="5"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="6"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="-"
+        android:textColor="#8E24AA"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="1"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="2"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="3"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="+"
+        android:textColor="#8E24AA"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="+/-"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="0"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btndecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6E5E5"
+        android:padding="20dp"
+        android:text="."
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnequal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#778E24AA"
+        android:padding="20dp"
+        android:text="="
+        android:textSize="30sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
